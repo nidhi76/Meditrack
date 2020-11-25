@@ -197,6 +197,6 @@ _Doctor viewing patient profile_
 **Project Information:**
 
 - **Developer:** Nidhi Wagh (MIS: 111803106)
-- **Institution:** TY COMP Division 1
+- **Class:** TY COMP Division 1
 - **Course:** Database Management Systems (DBMS)
 - **Academic Year:** 2020-2021
