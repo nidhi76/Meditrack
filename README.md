@@ -193,10 +193,3 @@ _Doctor viewing patient profile_
 - Email: `patient1@example.com` | Password: `password123`
 
 ---
-
-**Project Information:**
-
-- **Developer:** Nidhi Wagh (MIS: 111803106)
-- **Class:** TY COMP Division 1
-- **Course:** Database Management Systems (DBMS)
-- **Academic Year:** 2020-2021
