@@ -1,21 +1,54 @@
-# Hospital Management System - DBMS Project
+# Meditrack - Hospital Management System
 
-**Name:** Nidhi Wagh  
+**Student:** Nidhi Wagh  
 **MIS:** 111803106  
-**Class:** TY Comp Div 2  
-**Course:** Database Management Systems (DBMS) - Sem 5 Project
+**Class:** TYCOM Division 1  
+**Course:** Database Management Systems (DBMS)  
+**Academic Year:** 2020-2021
 
-Hospital Management System made for Sem 5 DBMS Course Project.
+## Project Overview
 
-Hospitals interact with a lot of people in a day and there are various activities involved in day to day operations of hospitals, for example booking of appointments, managing doctor schedules, managing patient diagnoses, managing medical histories of patients, etc. The aim of this project is to show how data related to these tasks can be made easier to manage using databases.
+Meditrack is a comprehensive hospital management system designed to streamline healthcare operations through efficient database management. This project demonstrates the practical application of database concepts in real-world healthcare scenarios, showcasing how proper data organization can improve patient care and hospital efficiency.
 
-## Technologies Used
+## Key Features
 
-- **Frontend:** React.js
-- **Backend:** Node.js, Express
-- **Database:** MySQL
+### For Patients
+- **Secure Authentication** - Individual patient accounts with encrypted login
+- **Appointment Management** - Easy booking, rescheduling, and cancellation of appointments
+- **Medical History Tracking** - Comprehensive record of past treatments, medications, and conditions
+- **Real-time Updates** - Instant notifications about appointment status and doctor availability
+- **Privacy Protection** - Medical records accessible only to assigned doctors
 
-## ER Diagram
+### For Healthcare Providers
+- **Doctor Dashboard** - Centralized view of patient appointments and schedules
+- **Patient Management** - Complete access to patient profiles and medical histories
+- **Diagnosis System** - Digital prescription and diagnosis management
+- **Schedule Optimization** - Automated conflict prevention and time slot management
+- **Medical Documentation** - Secure storage and retrieval of patient data
+
+## Technical Architecture
+
+### Frontend
+- **React.js** - Modern, responsive user interface
+- **Material-UI** - Professional healthcare-themed design
+- **Redux Toolkit** - Efficient state management
+- **React Router** - Seamless navigation between modules
+
+### Backend
+- **Node.js & Express** - Robust server architecture
+- **JWT Authentication** - Secure user session management
+- **RESTful API** - Clean, standardized data communication
+- **Input Validation** - Comprehensive data integrity checks
+
+### Database
+- **MySQL** - Reliable relational database management
+- **Normalized Schema** - Optimized data structure following 3NF principles
+- **Referential Integrity** - Consistent data relationships and constraints
+- **Indexed Queries** - Fast data retrieval and reporting
+
+## Database Design
+
+The system implements a well-structured relational database with the following core entities:
 
 ```mermaid
 erDiagram
@@ -103,70 +136,133 @@ erDiagram
     DOCTORS ||--o{ DOCTOR_SCHEDULES : "follows"
 ```
 
-## Patient Side Features
+## System Screenshots
 
-1. There is a separate interface for patients. Patients have a separate login.
-2. Patients can book appointments.
-3. Patients can give previous medical history.
-4. Patients can view/update/cancel already booked appointments if necessary.
-5. Cancelled appointments create free slots for other patients.
-6. The system avoids clash of appointments with other patients. Each patient is therefore ensured his/her slot.
-7. Patients are able to see complete diagnosis, prescriptions and medical history.
-8. Patient medical history is only available to the doctor with whom the appointment is booked to ensure privacy.
+### Patient Portal
 
-## Doctor Side Features
-
-1. There is a separate interface for doctors. Doctors have a separate login.
-2. The system takes into consideration doctor schedules and does not allow appointments when a doctor is already busy or has a break.
-3. Doctors are able to access patient history and profile, and add to patient history.
-4. Doctors are able to give diagnosis and prescriptions.
-5. Doctors are able to modify diagnosis and prescriptions.
-
-## Screenshots
-
-### Patient Interface
-
-![Login Page](Submissions/Screenshots/01_Login_Page.png)
-_Patient Login Screen_
+![Login Interface](Submissions/Screenshots/01_Login_Page.png)
+*Secure patient authentication portal*
 
 ![Patient Dashboard](Submissions/Screenshots/02_Dashboard_Patient_Home.png)
-_Patient Home Screen_
+*Comprehensive patient dashboard with appointment overview*
 
 ![Appointment Booking](Submissions/Screenshots/03_Appointment_Booking_Form.png)
-_Patient Scheduling Appointment_
+*Intuitive appointment scheduling with doctor selection*
 
-![Appointment Details](Submissions/Screenshots/04_Appointment.png)
-_Patient Viewing Appointments_
+![Appointment Management](Submissions/Screenshots/04_Appointment.png)
+*Detailed appointment view with patient notes and status*
 
-![Medical History](Submissions/Screenshots/05_Medical_History_Form.png)
-_Patient Viewing History_
+![Medical Records](Submissions/Screenshots/05_Medical_History_Form.png)
+*Complete medical history management interface*
 
-### Doctor Interface
+### Healthcare Provider Portal
 
 ![Doctor Dashboard](Submissions/Screenshots/06_Dashboard_Doctor_Home.png)
-_Doctor Home Screen_
+*Healthcare provider's centralized management console*
 
-![Appointment List](Submissions/Screenshots/07_Appointment_List_Doctor_View.png)
-_Doctor Viewing Appointment_
+![Appointment Overview](Submissions/Screenshots/07_Appointment_List_Doctor_View.png)
+*Doctor's appointment management and patient queue*
 
 ![Patient Profile](Submissions/Screenshots/08_Patient_Profile_Doctor_View.png)
-_Doctor Viewing Patient History_
+*Comprehensive patient information and medical history access*
 
-## Instructions to Run
+## Installation & Setup
 
-1. Run `npm install` in both `api` and `web` directories.
-2. Run `npm start` first in the `api` directory and then in the `web` directory.
-3. Access `localhost:3000` from the browser.
+### Prerequisites
+- Node.js (v14 or higher)
+- MySQL Server (v8.0 or higher)
+- Git
 
-## Default Login Credentials
+### Quick Start
 
-### Doctors:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/nidhi76/Meditrack.git
+   cd Meditrack
+   ```
 
-- Email: `dr.smith@meditrack.com` | Password: `password123`
-- Email: `dr.johnson@meditrack.com` | Password: `password123`
-- Email: `nidhi.wagh@meditrack.com` | Password: `password123`
+2. **Database setup**
+   ```bash
+   # Create database
+   mysql -u root -p
+   CREATE DATABASE meditrack_db;
+   CREATE USER 'meditrack_user'@'localhost' IDENTIFIED BY 'meditrack_password';
+   GRANT ALL PRIVILEGES ON meditrack_db.* TO 'meditrack_user'@'localhost';
+   FLUSH PRIVILEGES;
+   ```
 
-### Patients:
+3. **Backend setup**
+   ```bash
+   cd api
+   npm install
+   npm start
+   ```
 
-- Email: `nidhi.wagh@example.com` | Password: `password123`
-- Email: `patient1@example.com` | Password: `password123`
+4. **Frontend setup**
+   ```bash
+   cd web
+   npm install
+   npm start
+   ```
+
+5. **Access the application**
+   - Open your browser and navigate to `http://localhost:3000`
+
+## Demo Credentials
+
+### Healthcare Providers
+- **Dr. Smith (Cardiology)**
+  - Email: `dr.smith@meditrack.com`
+  - Password: `password123`
+
+- **Dr. Johnson (Pediatrics)**
+  - Email: `dr.johnson@meditrack.com`
+  - Password: `password123`
+
+- **Dr. Nidhi Wagh (General Medicine)**
+  - Email: `nidhi.wagh@meditrack.com`
+  - Password: `password123`
+
+### Patients
+- **Nidhi Wagh (Demo Patient)**
+  - Email: `nidhi.wagh@example.com`
+  - Password: `password123`
+
+- **Sample Patient**
+  - Email: `patient1@example.com`
+  - Password: `password123`
+
+## Project Highlights
+
+- **Database Normalization** - Implements 3NF for optimal data organization
+- **Security Implementation** - JWT-based authentication with password encryption
+- **Responsive Design** - Mobile-friendly interface for all devices
+- **Real-time Updates** - Live appointment status and availability
+- **Data Integrity** - Comprehensive validation and error handling
+- **Scalable Architecture** - Modular design for easy feature expansion
+
+## Learning Outcomes
+
+This project demonstrates practical application of:
+- **Database Design Principles** - Entity relationships and normalization
+- **Web Development** - Full-stack application development
+- **API Design** - RESTful service architecture
+- **User Experience** - Intuitive healthcare management interfaces
+- **Security Practices** - Authentication and data protection
+
+## Future Enhancements
+
+- Integration with medical devices
+- Advanced reporting and analytics
+- Mobile application development
+- Telemedicine capabilities
+- Electronic health record (EHR) integration
+
+---
+
+**Project Information:**
+- **Developer:** Nidhi Wagh (MIS: 111803106)
+- **Institution:** TYCOM Division 1
+- **Course:** Database Management Systems (DBMS)
+- **Project Period:** November 2020
+- **Academic Year:** 2020-2021
