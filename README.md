@@ -13,12 +13,14 @@ Meditrack is a hospital management system that helps manage patient appointments
 ## Key Features
 
 ### For Patients
+
 - **Login System** - Patients can create accounts and log in
 - **Book Appointments** - Patients can book appointments with doctors
 - **Medical History** - Patients can view and update their medical records
 - **Appointment Management** - Patients can see, change, or cancel appointments
 
 ### For Doctors
+
 - **Doctor Login** - Doctors have their own login system
 - **Patient Management** - Doctors can see patient information and medical history
 - **Appointment Management** - Doctors can see their appointment schedule
@@ -124,49 +126,51 @@ erDiagram
 
 ### Patient Interface
 
-![Login Interface](Submissions/Screenshots/01_Login_Page.png)
+![Login Interface](Screenshots/01_Login_Page.png)
 _Patient login page_
 
-![Patient Dashboard](Submissions/Screenshots/02_Dashboard_Patient_Home.png)
+![Patient Dashboard](Screenshots/02_Dashboard_Patient_Home.png)
 _Patient home screen_
 
-![Appointment Booking](Submissions/Screenshots/03_Appointment_Booking_Form.png)
+![Appointment Booking](Screenshots/03_Appointment_Booking_Form.png)
 _Book appointment form_
 
-![Appointment Management](Submissions/Screenshots/04_Appointment.png)
+![Appointment Management](Screenshots/04_Appointment.png)
 _View appointments_
 
-![Medical Records](Submissions/Screenshots/05_Medical_History_Form.png)
+![Medical Records](Screenshots/05_Medical_History_Form.png)
 _Medical history form_
 
 ### Doctor Interface
 
-![Doctor Dashboard](Submissions/Screenshots/06_Dashboard_Doctor_Home.png)
+![Doctor Dashboard](Screenshots/06_Dashboard_Doctor_Home.png)
 _Doctor home screen_
 
-![Appointment Overview](Submissions/Screenshots/07_Appointment_List_Doctor_View.png)
+![Appointment Overview](Screenshots/07_Appointment_List_Doctor_View.png)
 _Doctor appointment list_
 
-![Patient Profile](Submissions/Screenshots/08_Patient_Profile_Doctor_View.png)
+![Patient Profile](Screenshots/08_Patient_Profile_Doctor_View.png)
 _Doctor viewing patient profile_
 
 ## How to Run
 
 1. **Install Dependencies**
+
    ```bash
    cd api
    npm install
-   
+
    cd web
    npm install
    ```
 
 2. **Start the Application**
+
    ```bash
    # Start backend
    cd api
    npm start
-   
+
    # Start frontend
    cd web
    npm start
@@ -178,17 +182,20 @@ _Doctor viewing patient profile_
 ## Login Credentials
 
 ### Doctors
+
 - Email: `dr.smith@meditrack.com` | Password: `password123`
 - Email: `dr.johnson@meditrack.com` | Password: `password123`
 - Email: `nidhi.wagh@meditrack.com` | Password: `password123`
 
 ### Patients
+
 - Email: `nidhi.wagh@example.com` | Password: `password123`
 - Email: `patient1@example.com` | Password: `password123`
 
 ---
 
 **Project Information:**
+
 - **Developer:** Nidhi Wagh (MIS: 111803106)
 - **Institution:** TYCOM Division 1
 - **Course:** Database Management Systems (DBMS)
