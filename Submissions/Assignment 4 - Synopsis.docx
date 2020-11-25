@@ -1,53 +1,191 @@
 # Assignment 4: Project Synopsis
 
-**Student:** Nidhi Wagh
+**Student Name:** Nidhi Wagh  
 **MIS Number:** 111803106  
-**Course:** Database Management Systems  
+**Class:** TYCOM Division 1  
+**Course:** Database Management Systems (DBMS)  
+**Academic Year:** 2020-2021  
 **Assignment:** Assignment 4 - Project Synopsis  
 
-## Meditrack - Hospital Management System
+## Project Title
+Meditrack - Hospital Management System
 
-### 1. Project Title
-Meditrack: A Comprehensive Hospital Management System
+## 1. Introduction
 
-### 2. Problem Statement
-Hospitals and healthcare facilities face numerous challenges in managing patient data, appointment scheduling, doctor availability, and medical records. The current manual processes are time-consuming, error-prone, and inefficient.
+Hospitals are very busy places where many people come every day. Doctors see patients, nurses help them, and the staff manages all the paperwork. Keeping track of everything manually is very difficult and can lead to mistakes. Sometimes appointments get double-booked, medical records get lost, or doctors don't have the right information about a patient's history.
 
-### 3. Objectives
-- Develop a web-based hospital management system
-- Automate appointment booking and scheduling
-- Maintain comprehensive patient and doctor records
-- Provide secure access to medical history
-- Enable efficient diagnosis and prescription management
+This project, called Meditrack, is a computer system that helps hospitals manage all their daily work. It makes everything easier and faster by using a database to store and organize all the information. This way, doctors can focus more on treating patients instead of searching for papers and files.
 
-### 4. Scope of Work
-The system will include:
-- Patient registration and authentication
-- Doctor registration and profile management
-- Appointment booking with conflict resolution
-- Medical history management
-- Diagnosis and prescription recording
-- Doctor schedule management
-- Patient notes and comments system
+## 2. Problem Statement
 
-### 5. Technology Stack
-- **Frontend:** React.js, Material-UI
-- **Backend:** Node.js, Express.js
-- **Database:** MySQL
-- **Authentication:** JWT tokens
+Hospitals face many problems in their daily operations:
 
-### 6. Expected Outcomes
-- Improved efficiency in hospital operations
-- Reduced manual errors
-- Better patient experience
-- Centralized data management
-- Enhanced security and data integrity
+1. **Appointment Management** - When patients call to book appointments, the staff has to check manually if the doctor is free at that time. Sometimes two patients get booked for the same time slot by mistake.
 
-### 7. Timeline
-- Week 1-2: Database design and setup
-- Week 3-4: Backend API development
-- Week 5-6: Frontend development
-- Week 7-8: Testing and deployment
+2. **Medical Records** - Patient medical history is written on paper and stored in files. Finding the right file takes time, and sometimes files get lost or damaged.
 
-### 8. Conclusion
-This project aims to modernize hospital management through technology, providing a robust, scalable, and user-friendly solution for healthcare facilities.
+3. **Doctor Schedules** - Keeping track of when each doctor is available, when they have breaks, and which days they work is difficult to manage manually.
+
+4. **Patient Information** - Patient details like their address, phone number, and previous medical conditions are scattered in different files and registers.
+
+5. **Prescriptions and Diagnoses** - Doctors write prescriptions on paper. If a patient loses the prescription or needs to refer to it later, there is no backup copy.
+
+6. **Time Wastage** - A lot of time is wasted in finding files, checking schedules, and managing paperwork instead of treating patients.
+
+All these problems can be solved by using a database system that stores everything in an organized way and makes it easy to find and update information.
+
+## 3. Project Objectives
+
+The main goals of this project are:
+
+1. **Create a Database** - Design and build a database that can store all hospital information like patient details, doctor information, appointments, medical history, and diagnoses.
+
+2. **Patient Portal** - Make a system where patients can:
+   - Register and create their account
+   - Book appointments with doctors
+   - See their upcoming and past appointments
+   - Add and view their medical history
+   - Cancel or change appointments if needed
+
+3. **Doctor Portal** - Make a system where doctors can:
+   - Log in to their account
+   - See all their appointments for the day
+   - View patient information and medical history
+   - Write diagnoses and prescriptions
+   - Manage their schedule
+
+4. **Prevent Conflicts** - The system should automatically check if a doctor is already busy before allowing a new appointment. This way, no two patients will be booked at the same time.
+
+5. **Security** - Patient medical information is private. The system should make sure that only the doctor who has an appointment with the patient can see that patient's medical history.
+
+6. **Easy to Use** - The system should be simple and easy to use for both patients and doctors, even if they are not very familiar with computers.
+
+## 4. Scope of Work
+
+This project will include the following features:
+
+### For Patients:
+- **Registration System** - New patients can create an account by entering their name, email, password, address, phone number, and date of birth.
+- **Login System** - Patients can log in using their email and password.
+- **Book Appointments** - Patients can select a doctor, choose a date and time, and write their concerns or symptoms.
+- **View Appointments** - Patients can see all their scheduled, completed, and cancelled appointments.
+- **Cancel Appointments** - If a patient cannot come, they can cancel the appointment, which will free up that time slot for other patients.
+- **Medical History** - Patients can enter their past medical conditions, surgeries, current medications, and allergies.
+- **View Diagnoses** - After visiting the doctor, patients can see what diagnosis was given and what prescription was written.
+
+### For Doctors:
+- **Doctor Login** - Doctors can log in to their account using their email and password.
+- **Appointment List** - Doctors can see all appointments scheduled with them, sorted by date and time.
+- **Patient Information** - When a doctor clicks on an appointment, they can see the patient's name, age, contact details, medical history, and the concerns written by the patient.
+- **Write Diagnosis** - Doctors can write the diagnosis, prescription, and any notes about the patient.
+- **Update Diagnosis** - If needed, doctors can update or change the diagnosis and prescription.
+- **Schedule Management** - The system knows when each doctor works, what time they start and finish, and when they take breaks.
+
+### Database Features:
+- Store patient information safely
+- Store doctor details and their specializations
+- Track all appointments with date, time, and status
+- Keep medical history for each patient
+- Save all diagnoses and prescriptions
+- Manage doctor schedules for each day of the week
+
+## 5. Technology Used
+
+### Frontend (User Interface):
+- **React.js** - This is used to create the web pages that patients and doctors see on their screen. It makes the website fast and interactive.
+- **Material-UI** - This provides ready-made buttons, forms, and other components that look good and are easy to use.
+
+### Backend (Server):
+- **Node.js** - This runs on the server and handles all the work like checking login details, saving data, and sending information to the user.
+- **Express.js** - This helps Node.js handle requests from the web pages and send back the right information.
+
+### Database:
+- **MySQL** - This is where all the data is stored. It organizes information in tables and makes it easy to search and update.
+
+### Security:
+- **JWT (JSON Web Tokens)** - This keeps user login sessions secure. When a patient or doctor logs in, they get a token that proves who they are.
+- **Password Encryption** - Passwords are not stored as plain text. They are encrypted so that even if someone gets access to the database, they cannot see the actual passwords.
+
+## 6. System Design
+
+The database has six main tables:
+
+1. **Patients Table** - Stores patient information like email, password, name, address, gender, phone number, and date of birth.
+
+2. **Doctors Table** - Stores doctor information like email, password, name, gender, specialization (like cardiology or pediatrics), license number, and phone number.
+
+3. **Appointments Table** - Stores appointment details like which patient booked it, which doctor it is with, the date and time, patient's concerns and symptoms, and the status (scheduled, completed, or cancelled).
+
+4. **Medical History Table** - Stores each patient's medical history including past conditions, surgeries, current medications, and allergies.
+
+5. **Diagnoses Table** - Stores the diagnosis given by the doctor for each appointment, including the prescription and doctor's notes.
+
+6. **Doctor Schedules Table** - Stores when each doctor works, including the day of the week, start time, end time, and break times.
+
+All these tables are connected to each other using relationships. For example, each appointment is linked to one patient and one doctor. Each diagnosis is linked to one appointment.
+
+## 7. Expected Benefits
+
+1. **Faster Service** - Patients can book appointments quickly without calling the hospital. Doctors can see all patient information in one place without searching for files.
+
+2. **Fewer Mistakes** - The system automatically checks for conflicts and prevents double-booking. All information is stored correctly in the database.
+
+3. **Better Organization** - Everything is organized in one system. No more lost files or missing paperwork.
+
+4. **Easy Access** - Doctors can quickly access patient medical history during appointments. Patients can see their appointments and diagnoses anytime.
+
+5. **Data Security** - All information is stored securely. Only authorized people can access sensitive medical information.
+
+6. **Time Savings** - Less time is spent on paperwork and more time can be spent on patient care.
+
+## 8. Project Timeline
+
+**Week 1-2: Database Design**
+- Design all tables and their relationships
+- Create the ER diagram
+- Set up MySQL database
+- Write SQL queries to create tables
+
+**Week 3-4: Backend Development**
+- Create APIs for patient registration and login
+- Create APIs for doctor login
+- Create APIs for appointment booking
+- Create APIs for medical history
+- Create APIs for diagnosis management
+- Test all APIs
+
+**Week 5-6: Frontend Development**
+- Create patient registration and login pages
+- Create patient dashboard
+- Create appointment booking page
+- Create medical history page
+- Create doctor dashboard
+- Create diagnosis page
+- Connect frontend to backend APIs
+
+**Week 7-8: Testing and Final Work**
+- Test all features
+- Fix any bugs or errors
+- Take screenshots of all features
+- Write documentation
+- Prepare final presentation
+
+## 9. Conclusion
+
+This Hospital Management System project shows how databases can make hospital operations much easier and more efficient. Instead of managing everything on paper, all information is stored in a MySQL database that is fast, organized, and secure.
+
+The system helps patients by letting them book appointments easily and view their medical records anytime. It helps doctors by giving them quick access to patient information and allowing them to write digital prescriptions.
+
+By using modern web technologies like React.js for the user interface and Node.js for the server, the system is fast, reliable, and easy to use. The database design follows proper normalization rules to avoid data repetition and maintain data integrity.
+
+This project demonstrates important database concepts like entity relationships, primary keys, foreign keys, normalization, and data integrity. It also shows how databases are used in real-world applications to solve practical problems and improve efficiency.
+
+Through this project, I have learned how to design a database from scratch, create relationships between tables, build a full-stack web application, and apply database management principles to create a working system that can actually be used in a hospital setting.
+
+---
+
+**Submitted by:**  
+Nidhi Wagh  
+MIS: 111803106  
+TYCOM Division 1  
+November 2020
