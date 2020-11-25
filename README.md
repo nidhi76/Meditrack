@@ -13,6 +13,7 @@ Meditrack is a comprehensive hospital management system designed to streamline h
 ## Key Features
 
 ### For Patients
+
 - **Secure Authentication** - Individual patient accounts with encrypted login
 - **Appointment Management** - Easy booking, rescheduling, and cancellation of appointments
 - **Medical History Tracking** - Comprehensive record of past treatments, medications, and conditions
@@ -20,6 +21,7 @@ Meditrack is a comprehensive hospital management system designed to streamline h
 - **Privacy Protection** - Medical records accessible only to assigned doctors
 
 ### For Healthcare Providers
+
 - **Doctor Dashboard** - Centralized view of patient appointments and schedules
 - **Patient Management** - Complete access to patient profiles and medical histories
 - **Diagnosis System** - Digital prescription and diagnosis management
@@ -29,18 +31,21 @@ Meditrack is a comprehensive hospital management system designed to streamline h
 ## Technical Architecture
 
 ### Frontend
+
 - **React.js** - Modern, responsive user interface
 - **Material-UI** - Professional healthcare-themed design
 - **Redux Toolkit** - Efficient state management
 - **React Router** - Seamless navigation between modules
 
 ### Backend
+
 - **Node.js & Express** - Robust server architecture
 - **JWT Authentication** - Secure user session management
 - **RESTful API** - Clean, standardized data communication
 - **Input Validation** - Comprehensive data integrity checks
 
 ### Database
+
 - **MySQL** - Reliable relational database management
 - **Normalized Schema** - Optimized data structure following 3NF principles
 - **Referential Integrity** - Consistent data relationships and constraints
@@ -141,34 +146,35 @@ erDiagram
 ### Patient Portal
 
 ![Login Interface](Submissions/Screenshots/01_Login_Page.png)
-*Secure patient authentication portal*
+_Secure patient authentication portal_
 
 ![Patient Dashboard](Submissions/Screenshots/02_Dashboard_Patient_Home.png)
-*Comprehensive patient dashboard with appointment overview*
+_Comprehensive patient dashboard with appointment overview_
 
 ![Appointment Booking](Submissions/Screenshots/03_Appointment_Booking_Form.png)
-*Intuitive appointment scheduling with doctor selection*
+_Intuitive appointment scheduling with doctor selection_
 
 ![Appointment Management](Submissions/Screenshots/04_Appointment.png)
-*Detailed appointment view with patient notes and status*
+_Detailed appointment view with patient notes and status_
 
 ![Medical Records](Submissions/Screenshots/05_Medical_History_Form.png)
-*Complete medical history management interface*
+_Complete medical history management interface_
 
 ### Healthcare Provider Portal
 
 ![Doctor Dashboard](Submissions/Screenshots/06_Dashboard_Doctor_Home.png)
-*Healthcare provider's centralized management console*
+_Healthcare provider's centralized management console_
 
 ![Appointment Overview](Submissions/Screenshots/07_Appointment_List_Doctor_View.png)
-*Doctor's appointment management and patient queue*
+_Doctor's appointment management and patient queue_
 
 ![Patient Profile](Submissions/Screenshots/08_Patient_Profile_Doctor_View.png)
-*Comprehensive patient information and medical history access*
+_Comprehensive patient information and medical history access_
 
 ## Installation & Setup
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MySQL Server (v8.0 or higher)
 - Git
@@ -176,12 +182,14 @@ erDiagram
 ### Quick Start
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/nidhi76/Meditrack.git
    cd Meditrack
    ```
 
 2. **Database setup**
+
    ```bash
    # Create database
    mysql -u root -p
@@ -192,6 +200,7 @@ erDiagram
    ```
 
 3. **Backend setup**
+
    ```bash
    cd api
    npm install
@@ -199,6 +208,7 @@ erDiagram
    ```
 
 4. **Frontend setup**
+
    ```bash
    cd web
    npm install
@@ -211,11 +221,14 @@ erDiagram
 ## Demo Credentials
 
 ### Healthcare Providers
+
 - **Dr. Smith (Cardiology)**
+
   - Email: `dr.smith@meditrack.com`
   - Password: `password123`
 
 - **Dr. Johnson (Pediatrics)**
+
   - Email: `dr.johnson@meditrack.com`
   - Password: `password123`
 
@@ -224,7 +237,9 @@ erDiagram
   - Password: `password123`
 
 ### Patients
+
 - **Nidhi Wagh (Demo Patient)**
+
   - Email: `nidhi.wagh@example.com`
   - Password: `password123`
 
@@ -244,6 +259,7 @@ erDiagram
 ## Learning Outcomes
 
 This project demonstrates practical application of:
+
 - **Database Design Principles** - Entity relationships and normalization
 - **Web Development** - Full-stack application development
 - **API Design** - RESTful service architecture
@@ -261,6 +277,7 @@ This project demonstrates practical application of:
 ---
 
 **Project Information:**
+
 - **Developer:** Nidhi Wagh (MIS: 111803106)
 - **Institution:** TYCOM Division 1
 - **Course:** Database Management Systems (DBMS)
