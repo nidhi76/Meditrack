@@ -1,0 +1,53 @@
+# Assignment 4: Project Synopsis
+
+**Student:** Nidhi Wagh
+**MIS Number:** 111803106  
+**Course:** Database Management Systems  
+**Assignment:** Assignment 4 - Project Synopsis  
+
+## Meditrack - Hospital Management System
+
+### 1. Project Title
+Meditrack: A Comprehensive Hospital Management System
+
+### 2. Problem Statement
+Hospitals and healthcare facilities face numerous challenges in managing patient data, appointment scheduling, doctor availability, and medical records. The current manual processes are time-consuming, error-prone, and inefficient.
+
+### 3. Objectives
+- Develop a web-based hospital management system
+- Automate appointment booking and scheduling
+- Maintain comprehensive patient and doctor records
+- Provide secure access to medical history
+- Enable efficient diagnosis and prescription management
+
+### 4. Scope of Work
+The system will include:
+- Patient registration and authentication
+- Doctor registration and profile management
+- Appointment booking with conflict resolution
+- Medical history management
+- Diagnosis and prescription recording
+- Doctor schedule management
+- Patient notes and comments system
+
+### 5. Technology Stack
+- **Frontend:** React.js, Material-UI
+- **Backend:** Node.js, Express.js
+- **Database:** MySQL
+- **Authentication:** JWT tokens
+
+### 6. Expected Outcomes
+- Improved efficiency in hospital operations
+- Reduced manual errors
+- Better patient experience
+- Centralized data management
+- Enhanced security and data integrity
+
+### 7. Timeline
+- Week 1-2: Database design and setup
+- Week 3-4: Backend API development
+- Week 5-6: Frontend development
+- Week 7-8: Testing and deployment
+
+### 8. Conclusion
+This project aims to modernize hospital management through technology, providing a robust, scalable, and user-friendly solution for healthcare facilities.

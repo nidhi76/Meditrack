@@ -1,0 +1,48 @@
+# Assignment 5: Database Normalisation
+
+**Student:** Nidhi Wagh 
+**MIS Number:** 111803106  
+**Course:** Database Management Systems  
+**Assignment:** Assignment 5 - Database Normalisation  
+
+## Database Normalisation Analysis for Meditrack System
+
+### 1. Introduction
+This document provides a comprehensive analysis of the database normalisation process for the Meditrack Hospital Management System. The normalisation process ensures data integrity, reduces redundancy, and improves database performance.
+
+### 2. Original Unnormalised Design
+The initial database design contained several issues:
+- Redundant data storage
+- Update anomalies
+- Insertion anomalies
+- Deletion anomalies
+
+### 3. First Normal Form (1NF)
+**Requirements:** All attributes must contain atomic values
+**Applied to tables:**
+- patients
+- doctors
+- appointments
+- medical_history
+- diagnoses
+- doctor_schedules
+
+### 4. Second Normal Form (2NF)
+**Requirements:** Must be in 1NF and all non-key attributes must be fully functionally dependent on the primary key
+**Analysis:**
+- All tables satisfy 2NF requirements
+- No partial dependencies found
+
+### 5. Third Normal Form (3NF)
+**Requirements:** Must be in 2NF and no transitive dependencies
+**Analysis:**
+- All tables satisfy 3NF requirements
+- No transitive dependencies identified
+
+### 6. Boyce-Codd Normal Form (BCNF)
+**Requirements:** Must be in 3NF and every determinant must be a superkey
+**Analysis:**
+- All tables satisfy BCNF requirements
+
+### 7. Conclusion
+The Meditrack database schema is properly normalised up to BCNF, ensuring optimal data storage and integrity.
